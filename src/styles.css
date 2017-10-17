@@ -23,23 +23,21 @@ body {
   font-size: 1.75rem; }
 
 a {
-  color: #414b5d; }
-
-a[href] {
+  color: #414b5d;
   text-decoration: none; }
 
 #visited {
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
-  width: 310px; }
+  max-width: 310px;
+  min-width: 290px; }
 
 #recommendations {
   display: block;
   flex-flow: row wrap;
   align-items: flex-start;
-  width: calc(100% - 310px);
-  min-width: 310px; }
+  width: calc(100% - 310px); }
 
 .visited-items,
 .recommended-items {
@@ -48,9 +46,6 @@ a[href] {
   position: relative;
   margin: 0;
   padding: 0; }
-
-.visited-items {
-  display: block; }
 
 .items .item {
   list-style: none;
@@ -162,7 +157,8 @@ a[href] {
 
   #visited,
   #recommendations {
-    width: 100%; }
+    width: 100%;
+    max-width: 100%; }
 
   .item-add-wrapper {
     display: block; }
@@ -172,6 +168,7 @@ a[href] {
 
   .visited-items,
   .recommended-items {
+    display: block;
     position: relative;
     margin: 0 auto;
     padding: 0;

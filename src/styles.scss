@@ -40,9 +40,6 @@ body {
 
 a {
     color: $primary-color;
-}
-
-a[href] {
     text-decoration: none;
 }
 
@@ -50,7 +47,8 @@ a[href] {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
-    width: 310px;
+    max-width: 310px;
+    min-width: 290px;
 }
 
 #recommendations {
@@ -58,7 +56,6 @@ a[href] {
     flex-flow: row wrap;
     align-items: flex-start;
     width: calc(100% - 310px);
-    min-width: 310px;
 }
 
 .visited-items,
@@ -68,10 +65,6 @@ a[href] {
     position: relative;
     margin: 0;
     padding: 0;
-}
-
-.visited-items {
-    display: block;
 }
 
 .items .item {
@@ -209,6 +202,7 @@ a[href] {
     #visited,
     #recommendations {
         width: 100%;
+        max-width: 100%;
     }
 
     .item-add-wrapper {
@@ -221,6 +215,7 @@ a[href] {
     
     .visited-items,
     .recommended-items {
+        display: block;
         position: relative;
         margin: 0 auto;
         padding: 0;
