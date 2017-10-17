@@ -1,0 +1,26 @@
+{
+  "name": "itelios-challenge",
+  "version": "1.0.0",
+  "description": "Desafio para vaga de Front End na Itelios",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "sass --watch styles.scss:styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meendoo/itelios-frontend-challenge.git"
+  },
+  "keywords": [
+    "itelios",
+    "front",
+    "challenge",
+    "cross-sell"
+  ],
+  "author": "meendoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meendoo/itelios-frontend-challenge/issues"
+  },
+  "homepage": "https://github.com/meendoo/itelios-frontend-challenge#readme"
+}

@@ -5,13 +5,28 @@
 Olá galera da Itelios!
 Gostei bastante da proposta de desafio, que é um teste bem próximo da realidade do front-end, diferente dos praticados por plataformas como Codility, que realizam um tipo de avaliação que eu não sou muito fã. São plataformas importantes para nivelar os conhecimentos, porém possuem seus contras no âmbito do front-end.
 
-Bom, optarei por um _approach_ simples na resolução do problema:
+Bom, optei por um _approach_ simples na resolução do problema:
 
 - Construção do esqueleto básico com HTML + CSS
 - Consumir JSON via <code>XMLHttpRequest</code>
 - Popular listagem com template dos produtos pré-construido no HTML
 - Utilizar carrossel do Slick (https://github.com/kenwheeler/slick/) para recomendações, caso não seja possível implementar um próprio
 - Adaptação Mobile
+
+## Considerações Finais
+
+- A fluidez do layout poderia ter sido melhorada. Os cards estão com um width semi-fixo, causando desbalanço na apresentação
+- Não produzi um carrossel próprio
+- Há imagens com link quebrado
+- O tempo total de execução ultrapassou um pouco as 8h estipuladas como ideal
+
+
+## Como rodar?
+
+**Simples, só abrir o <code>index.html</code> no diretório <code>/src</code>.**
+
+Para acompanhar mudanças e recompilar o Sass, executar <code>npm run watch-sass</code> no diretório <code>/src</code>.
+Caso não tenha o cli do <code>sass</code> instalado, rode <code>sudo gem install sass</code>.
 
 ___
 
