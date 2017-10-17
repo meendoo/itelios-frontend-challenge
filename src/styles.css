@@ -77,7 +77,8 @@ a {
     display: block; }
 
 .item-preview {
-  margin: 16px 0; }
+  margin: 16px 0;
+  font-size: 12px; }
 
 .item-preview img {
   display: block;
