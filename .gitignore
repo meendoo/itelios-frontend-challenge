@@ -59,3 +59,6 @@ typings/
 
 # Mac Files
 .DS_Store
+
+# Sass cache files
+.sass-cache
