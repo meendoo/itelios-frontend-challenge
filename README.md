@@ -11,6 +11,7 @@ Bom, optarei por um _approach_ simples na resolução do problema:
 - Consumir JSON via <code>XMLHttpRequest</code>
 - Popular listagem com template dos produtos pré-construido no HTML
 - Utilizar carrossel do Slick (https://github.com/kenwheeler/slick/) para recomendações, caso não seja possível implementar um próprio
+- Adaptação Mobile
 
 ___
 
