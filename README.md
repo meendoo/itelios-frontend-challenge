@@ -1,5 +1,19 @@
 ![Itelios](http://www.itelios.com.br/images/logo_itelios_orange@2x.png)
 
+# Itelios Front End Challenge - Helder Santos
+
+Olá galera da Itelios!
+Gostei bastante da proposta de desafio, que é um teste bem próximo da realidade do front-end, diferente dos praticados por plataformas como Codility, que realizam um tipo de avaliação que eu não sou muito fã. São plataformas importantes para nivelar os conhecimentos, porém possuem seus contras no âmbito do front-end.
+
+Bom, optarei por um _approach_ simples na resolução do problema:
+
+- Construção do esqueleto básico com HTML + CSS
+- Consumir JSON via <code>XMLHttpRequest</code>
+- Popular listagem com template dos produtos pré-construido no HTML
+- Utilizar carrossel do Slick (https://github.com/kenwheeler/slick/) para recomendações, caso não seja possível implementar um próprio
+
+___
+
 # Itelios Frontend Challenge
 
 Bem-vindo ao desafio de admissão de front-end da Itelios! O que preparamos para este desafio é um pedacinho do que você irá fazer aqui na Itelios, caso seja admitido.
