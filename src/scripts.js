@@ -16,6 +16,38 @@ xhr.onreadystatechange = function() {
             itemsRecommended.appendChild(createProductItem(suggestedList[i]));
         }
         recommended.append(itemsRecommended);
+
+        $(document).ready(function(){
+            $(".recommended-items").slick({
+                dots: true,
+                arrows: false,
+                variableWidth: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                dotsClass: "slick-dots pagination-dots",
+
+                responsive: [{
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                }, {
+                    breakpoint: 980,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 640,
+                    settings: {
+                        infinite: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
     }
 }
 
@@ -34,6 +66,7 @@ function createProductItem (obj) {
     var imgHolder = newElement('div', 'item-preview'),
         img = newElement('img');
     img.setAttribute('src', obj.imageName.replace('//www.itelios.com.br/arquivos/imagens/', 'https://raw.githubusercontent.com/meendoo/itelios-frontend-challenge/master/images/')); // fix pro src das imagens
+    img.setAttribute('alt', obj.name);
     imgHolder.append(img);
     linkToItem.append(imgHolder);
     
